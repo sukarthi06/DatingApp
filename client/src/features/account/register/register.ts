@@ -1,7 +1,7 @@
 import { Component, inject, output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RegisterCreds } from '../../../types/user';
 import { AccountService } from '../../../core/services/account-service';
+import { RegisterCreds } from '../../../types/user';
 
 @Component({
   selector: 'app-register',
@@ -27,4 +27,5 @@ export class Register {
   cancel(){
     this.cancelRegister.emit(false);
   }
+
 }
